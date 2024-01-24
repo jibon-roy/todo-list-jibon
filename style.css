@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1{
+    text-align: center;
+    margin: 30px 30px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container{
+    height: 500px;
+    width: 720px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .container #input-field{
+    display: flex;
+}
+
+main .container #input-field #input{
+    height: 50px;
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ff4455;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-style: none;
+    outline: none;
+}
+
+main .container #input-field #add{
+    padding: 0 10px;
+    border: 2px solid #ff4455;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-style: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+main .container #input-field #add:active{
+    background-color: #ff4455;
+}
+
+main .container .task-field{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #ff4455;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.387) inset;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+main .container .task-field::-webkit-scrollbar{
+    width: 5px;
+}
+
+main .container .task-field::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-color: rgb(98, 98, 98);
+}
+main .container .task-field::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px gray;
+}
+
+
+.tasks{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ff4455;
+    border-radius: 8px;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #ff4454c6;
+    font-weight: bold;
+    align-items: center;
+}
+
+.delete{
+    background-color: rgb(0, 0, 0);
+    padding: 5px 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+.delete:active{
+    background-color: #ff4455;
+}
